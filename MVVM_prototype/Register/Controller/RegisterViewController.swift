@@ -11,7 +11,6 @@ import FirebaseFirestore
 
 class RegisterViewController: UIViewController, RegisterViewDelegate {
     
-   
     //MARK:--  Outlets
     
     @IBOutlet var nameTextField: UITextField!
@@ -64,8 +63,27 @@ class RegisterViewController: UIViewController, RegisterViewDelegate {
     }
     
     func registerdidFail(with error: Error) {
-        
-        AlertMessage.alert(title: "Erro", message: "\(error)", viewController: self)
+        self.error(type: error as NSError)
+    }
+    
+    func error(type: NSError) {
+        if let errorCode = type.userInfo["FIRAuthErrorUserInfoNameKey"] {
+            let textError = errorCode as! String
+            var errorMessage = ""
+            
+            switch textError {
+            case "ERROR_EMAIL_ALREADY_IN_USE":
+                AlertMessage.alert(title: "Erro", message: "E-mail em uso. Escolha outro endereço.", viewController: self)
+            case "ERROR_WEAK_PASSWORD":
+                AlertMessage.alert(title: "Erro", message: "A senhas devem ter no mínimo 6 caracteres e devem ser iguais.", viewController: self)
+            case "ERROR_INVALID_EMAIL":
+                AlertMessage.alert(title: "Erro", message: "Formato de e-mail inválido.", viewController: self)
+            case "ERROR_MISSING_EMAIL":
+                AlertMessage.alert(title: "Erro", message: "Um endereço de e-mail deve ser fornecido.", viewController: self)
+            default:
+                AlertMessage.alert(title: "Erro", message: "Erro 404.", viewController: self)
+            }
+        }
     }
     
     func alert(with alert: String) {

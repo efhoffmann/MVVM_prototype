@@ -1,4 +1,12 @@
 //
+//  reserva.swift
+//  MVVM_prototype
+//
+//  Created by Eduardo Hoffmann on 20/06/23.
+//
+
+import Foundation
+//
 //  LoginViewController.swift
 //  MVVM_prototype
 //
@@ -7,6 +15,7 @@
 
 import UIKit
 
+/*
 class LoginViewController: UIViewController, AuthenticationViewDelegate {
    
     //MARK:--  Outlets
@@ -38,23 +47,7 @@ class LoginViewController: UIViewController, AuthenticationViewDelegate {
     }
        
     func authenticationDidFail(with error: Error) {
-        self.error(type: error as NSError)
-    }
-    
-    func error(type: NSError) {
-        if let errorCode = type.userInfo["FIRAuthErrorUserInfoNameKey"] {
-            let textError = errorCode as! String
-            var errorMessage = ""
-            
-            switch textError {
-            case "ERROR_WRONG_PASSWORD":
-                AlertMessage.alert(title: "Erro", message: "Usuário ou senha inválidos.", viewController: self)
-            case "ERROR_WEAK_PASSWORD":
-                AlertMessage.alert(title: "Erro", message: "Senha inválida.", viewController: self)
-            default:
-                AlertMessage.alert(title: "Erro", message: "Erro 404.", viewController: self)
-            }
-        }
+        AlertMessage.alert(title: "Erro", message: "\(error)", viewController: self)
     }
     
     //MARK:-- Actions
@@ -68,3 +61,4 @@ class LoginViewController: UIViewController, AuthenticationViewDelegate {
     }
 }
 
+*/

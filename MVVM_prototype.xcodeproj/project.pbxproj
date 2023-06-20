@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B947D8101B28C730E190F9B /* Pods_MVVM_prototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985DD0BEE4F1085381F5ECE0 /* Pods_MVVM_prototype.framework */; };
 		7D81A2482A425BE6006EB692 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A2472A425BE6006EB692 /* HomeViewModel.swift */; };
+		7D81A24A2A4263B9006EB692 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A2492A4263B9006EB692 /* AlertModel.swift */; };
+		7D81A24C2A4264D0006EB692 /* reserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D81A24B2A4264D0006EB692 /* reserva.swift */; };
 		7DD624592A40DEC6005C0798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD624582A40DEC6005C0798 /* AppDelegate.swift */; };
 		7DD6245B2A40DEC6005C0798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6245A2A40DEC6005C0798 /* SceneDelegate.swift */; };
 		7DD6245D2A40DEC6005C0798 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD6245C2A40DEC6005C0798 /* LoginViewController.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		4DDECD69D614233E63EA9509 /* Pods-MVVM_prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_prototype.debug.xcconfig"; path = "Target Support Files/Pods-MVVM_prototype/Pods-MVVM_prototype.debug.xcconfig"; sourceTree = "<group>"; };
 		7D81A2472A425BE6006EB692 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7D81A2492A4263B9006EB692 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		7D81A24B2A4264D0006EB692 /* reserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserva.swift; sourceTree = "<group>"; };
 		7DD624552A40DEC6005C0798 /* MVVM_prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD624582A40DEC6005C0798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DD6245A2A40DEC6005C0798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				7DD624662A40DECA005C0798 /* Info.plist */,
 				7DD624702A40DFE2005C0798 /* GoogleService-Info.plist */,
 				7DFDF0642A40FC0500614E12 /* UserModel.swift */,
+				7D81A24B2A4264D0006EB692 /* reserva.swift */,
 			);
 			path = MVVM_prototype;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				7DFDF0722A413A9500614E12 /* AlertMessage.swift */,
+				7D81A2492A4263B9006EB692 /* AlertModel.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DFDF0632A40FB7E00614E12 /* HomeViewController.swift in Sources */,
+				7D81A24A2A4263B9006EB692 /* AlertModel.swift in Sources */,
 				7DFDF0702A41391900614E12 /* RegisterViewModel.swift in Sources */,
 				7DD6245D2A40DEC6005C0798 /* LoginViewController.swift in Sources */,
 				7DFDF06C2A41062B00614E12 /* SplashScreenViewController.swift in Sources */,
@@ -350,6 +357,7 @@
 				7DD6245B2A40DEC6005C0798 /* SceneDelegate.swift in Sources */,
 				7D81A2482A425BE6006EB692 /* HomeViewModel.swift in Sources */,
 				7DFDF0652A40FC0500614E12 /* UserModel.swift in Sources */,
+				7D81A24C2A4264D0006EB692 /* reserva.swift in Sources */,
 				7DFDF05E2A40FB5C00614E12 /* RegisterViewController.swift in Sources */,
 				7DFDF0692A41024900614E12 /* LoginViewModel.swift in Sources */,
 				7DFDF06E2A41190800614E12 /* SplashScreenViewModel.swift in Sources */,
